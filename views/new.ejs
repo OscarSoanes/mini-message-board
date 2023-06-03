@@ -6,6 +6,14 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <form action="/new" method="POST">
+      <label for="text">Message:</label>
+      <input type="text" name="text" id="text" required>
+
+      <label for="user">User:</label>
+      <input type="text" name="user" id="user" required>
+
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
