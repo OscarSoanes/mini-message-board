@@ -2,13 +2,22 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <div>
+    <div class="header">
+      <h1><%= title %></h1>
+      <a href="/new">Add a new message?</a>
+    </div>
+    <div class="body">
       <% for (const message of messages) { %>
-        <p> <%= message.text %> </p>
+      <div class="message">
+        <div class="flex">
+          <p><%= message.added %></p>
+          <p><%= message.user %></p>
+        </div>
+        <p class="text"> <%= message.text %></p>
+      </div>
       <% } %>
     </div>
   </body>

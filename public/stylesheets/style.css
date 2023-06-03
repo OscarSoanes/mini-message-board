@@ -6,3 +6,37 @@ body {
 a {
   color: #00B7FF;
 }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.body {
+  background-color: lightgray;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.message {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flex > p:last-child {
+  font-size: large;
+}
+
+.text {
+  margin: 0 2rem;
+}
