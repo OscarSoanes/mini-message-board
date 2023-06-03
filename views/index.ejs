@@ -6,6 +6,10 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div>
+      <% for (const message of messages) { %>
+        <p> <%= message.text %> </p>
+      <% } %>
+    </div>
   </body>
 </html>
