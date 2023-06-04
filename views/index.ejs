@@ -13,7 +13,7 @@
       <% for (const message of messages) { %>
       <div class="message">
         <div class="flex">
-          <p><%= message.added %></p>
+          <p><%= formatDate(message.date) %></p>
           <p><%= message.user %></p>
         </div>
         <p class="text"> <%= message.text %></p>
