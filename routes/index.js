@@ -10,8 +10,8 @@ mongoose.set("strictQuery", false);
 
 require('dotenv').config();
 
-const mongoUser = process.env.MONGO_USER;
-const mongoPass = process.env.MONGO_PASSWORD;
+const mongoUser = process.env.MONGO_USER || SECRETS.MONGO_USER;
+const mongoPass = process.env.MONGO_PASSWORD || SECRETS.MONGO_PASSWORD ;
 
 const mongoDB = `mongodb+srv://${mongoUser}:${mongoPass}@cluster0.f2xfnx5.mongodb.net/?retryWrites=true&w=majority`
 
